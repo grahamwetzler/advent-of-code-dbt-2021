@@ -1,0 +1,17 @@
+name: 'advent_of_code'
+version: '1.0.0'
+config-version: 2
+profile: 'default'
+model-paths: ['days']
+log-path: '/tmp/'
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+  - "logs"
+
+models:
+  advent_of_code:
+    +materialized: external
+    +format: csv
