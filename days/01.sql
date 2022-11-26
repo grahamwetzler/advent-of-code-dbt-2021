@@ -1,3 +1,5 @@
+-- https://adventofcode.com/2021/day/1
+
 with input as (
   select input::int as depth
     from {{ read_csv() }}

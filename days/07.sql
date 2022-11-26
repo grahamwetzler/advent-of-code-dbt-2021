@@ -1,3 +1,5 @@
+-- https://adventofcode.com/2021/day/7
+
 with input as (
   select str_split(input, ',') as positions
     from {{ read_csv() }}

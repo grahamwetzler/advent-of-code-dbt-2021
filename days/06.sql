@@ -1,3 +1,5 @@
+-- https://adventofcode.com/2021/day/6
+
 with recursive input as (
   select unnest(str_split(input, ',')) as fish_age
   from {{ read_csv() }}

@@ -1,3 +1,5 @@
+-- https://adventofcode.com/2021/day/2
+
 with input as (
   select str_split(input, ' ') as direction_array
     from {{ read_csv() }}
