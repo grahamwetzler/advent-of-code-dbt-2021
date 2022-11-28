@@ -1,15 +1,17 @@
-name: 'advent_of_code'
-version: '1.0.0'
+name: advent_of_code
+version: "1.0.0"
 config-version: 2
-profile: 'default'
-model-paths: ['days']
-log-path: '/tmp/'
-
-target-path: "target"
+profile: default
+log-path: /tmp/
+target-path: target
 clean-targets:
-  - "target"
-  - "dbt_packages"
-  - "logs"
+  - target
+  - dbt_packages
+  - logs
+
+model-paths:
+  - days
+  - helpers
 
 models:
   advent_of_code:
